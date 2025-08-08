@@ -2,7 +2,7 @@ import cv2
 import pyttsx3
 import random
 import threading
-from deepface import DeepFace
+from fer import FER
 import time
 import numpy as np
 import queue
@@ -52,6 +52,7 @@ class AudioManager:
 # Initialize
 audio_manager = AudioManager()
 compliment_stop_flag = threading.Event()
+fer_detector = FER(mtcnn=True)
 
 compliment_db = {
     'happy': [
@@ -120,21 +121,29 @@ def process_frame(frame):
     global current_emotion, current_compliment, active_compliment, last_compliment_time, compliment_stop_flag
 
     try:
-        result = DeepFace.analyze(frame, actions=['emotion'], enforce_detection=False)
-        new_emotion = result[0]['dominant_emotion']
-        current_time = time.time()
+        # Use FER for emotion detection
+        result = fer_detector.detect_emotions(frame)
+        if result:
+            emotions = result[0]['emotions']
+            new_emotion = max(emotions, key=emotions.get)
+            confidence = emotions[new_emotion]
+            current_time = time.time()
 
-        if (new_emotion != current_emotion or not active_compliment) and \
-           (current_time - last_compliment_time > 5):
+            if (new_emotion != current_emotion or not active_compliment) and \
+               (current_time - last_compliment_time > 5) and confidence > 0.6:
 
-            compliment_stop_flag.clear()
-            current_emotion = new_emotion
-            current_compliment = get_compliment(current_emotion)
-            active_compliment = True
-            last_compliment_time = current_time
+                compliment_stop_flag.clear()
+                current_emotion = new_emotion
+                current_compliment = get_compliment(current_emotion)
+                active_compliment = True
+                last_compliment_time = current_time
 
-            print(f"[Emotion] {current_emotion}")
-            audio_manager.repeat_until_thanked(current_compliment, compliment_stop_flag)
+                print(f"[Emotion] {current_emotion} with confidence: {confidence:.2f}")
+                audio_manager.repeat_until_thanked(current_compliment, compliment_stop_flag)
+        else:
+             current_emotion = "" # Reset emotion if no face is detected
+             active_compliment = False
+             compliment_stop_flag.set() # Stop any running audio
 
     except Exception as e:
         print(f"[Detection Error] {e}")
