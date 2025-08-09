@@ -82,7 +82,9 @@ For Hardware:
 
 ### Project Demo
 # Video
-[![Watch the demo video](https://raw.githubusercontent.com/Shahana0001/useless-project/main/demo%20video.mp4)](https://raw.githubusercontent.com/Shahana0001/useless-project/main/demo%20video.mp4)
+<video controls>
+  <source src="https://raw.githubusercontent.com/Shahana0001/useless-project/main/demo%20video.mp4" type="video/mp4">
+</video>
 
 # Additional Demos
 [Add any extra demo materials/links]
