@@ -1,34 +1,35 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# [Compliment mirror] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Null and void]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
+- Team Lead: [Shahana shemeer] - [College of engineering Perumon]
+- Member 2: [Archana.V] - [College of engineering Perumon]
 - Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+[The Complementing Mirror Project is a simple mirror that gives random compliments when you look into it. It's meant to be fun, but doesn't really serve any practical purpose.]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[Normal mirrors just reflect your face… they never tell you how amazing you.]
+]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[By giving the mirror a brain (sort of) and a voice, so it can spot you, pick a random compliment, and say it out loud — turning your daily reflection into a mini confidence party.]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [Language used] python
+- [Frameworks used] None
+- [Libraries used] opencv-python (cv2),fer,pyttsx3,SpeechRecognition,pyAudio
+- [Tools used] Visual Studio Code,a webcam,a microphone
 
 For Hardware:
 - [List main components]
@@ -47,13 +48,13 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/df99b4f0-706c-4fc8-929f-4f358bd5a67a" />]
+**
+
+![<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f89d6b36-d8f1-40bf-a203-4eb7fe9f513a" />]
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
+![<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/75c8c728-8472-4df9-81fe-01f2fbf2b23a" />]
 *Add caption explaining what this shows*
 
 # Diagrams
