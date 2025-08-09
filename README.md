@@ -26,10 +26,10 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Language used] python
-- [Frameworks used] None
-- [Libraries used] opencv-python (cv2),fer,pyttsx3,SpeechRecognition,pyAudio
-- [Tools used] Visual Studio Code,a webcam,a microphone
+- [language uses python]
+- [Frameworks used None]
+- [Libraries used opencv-python (cv2),fer,pyttsx3,SpeechRecognition,pyAudio]
+- [Tools used Visual Studio Code,a webcam,a microphone]
 
 For Hardware:
 - [List main components]
@@ -49,13 +49,13 @@ For Software:
 
 # Screenshots (Add at least 3)
 ![<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/df99b4f0-706c-4fc8-929f-4f358bd5a67a" />]
-**
+*the miror detecting humnan face*
 
 ![<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f89d6b36-d8f1-40bf-a203-4eb7fe9f513a" />]
-*Add caption explaining what this shows*
+*the ouput of the result when the user says thank youh*
 
 ![<img width="1920" height="1020" alt="Image" src="https://github.com/user-attachments/assets/75c8c728-8472-4df9-81fe-01f2fbf2b23a" />]
-*Add caption explaining what this shows*
+*the code*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -90,8 +90,8 @@ https://drive.google.com/file/d/1Sp3HN9AtPBl6qDqOBW4QMGwSkk3xfOE7/view?usp=shari
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
+- [ Shahana Shemeer]: [make the face detection and the code]
+- [Archana.V]: [audio and video files]
 - [Name 3]: [Specific contributions]
 
 ---
